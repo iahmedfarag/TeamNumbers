@@ -19,14 +19,17 @@ export const generalSlice = createSlice({
 
             state.sheet = action.payload
             state.keys = Object.keys(action.payload[0])
+            // surveys total
             action.payload.map((agent) => total_surveys += agent.Surveys)
             state.totalSURVEYS = total_surveys
-
+            // csat total
             action.payload.map((agent) => total_csat += agent.CSAT)
             state.totalCSAT = (total_csat * 10).toFixed(2)
-
+            // kcsat total
             action.payload.map((agent) => total_kcsat += agent.KCSAT)
             state.totalKCSAT = (total_kcsat * 10).toFixed(2)
+
+            localStorage.setItem('sheet', JSON.stringify(action.payload))
         }
     },
 })

@@ -9,7 +9,7 @@ export default function Navbar() {
 
     return (
         <Wrapper>
-            <h3>𝐓𝐚𝐛𝐛𝐲 𝐓𝐞𝐚𝐦 𝐒𝐭𝐚𝐭𝐢𝐜𝐬</h3>
+            <h3>𝐓𝐞𝐚𝐦 𝐒𝐭𝐚𝐭𝐢𝐜𝐬</h3>
             {sheet.sheet ? <UploadBtn /> : ''}
         </Wrapper>
     )
