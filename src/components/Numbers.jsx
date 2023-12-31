@@ -24,7 +24,7 @@ export default function Numbers() {
                             <tr key={index}>
                                 <td>{agent.Agent}</td>
                                 <td>{agent.Surveys}</td>
-                                <td style={{ color: `${agent.KCSAT >= .75 ? 'green' : 'red'}` }}>{(agent.KCSAT * 100).toFixed(2)}</td>
+                                <td style={{ color: `${agent.KCSAT >= .80 ? 'green' : 'red'}` }}>{(agent.KCSAT * 100).toFixed(2)}</td>
                                 <td style={{ color: `${agent.CSAT >= .80 ? 'green' : 'red'}` }}>{(agent.CSAT * 100).toFixed(2)}</td>
                             </tr>
                         </>
